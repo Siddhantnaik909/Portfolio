@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Siddhant Satish Naik</title>
+    <meta name="description" content="Explore the latest projects by Siddhant Satish Naik, including cloud architecture, data analytics, cybersecurity, and data management solutions.">
+    <style>
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0A192F;
+        color: #E6F1FF;
+    }/* Navbar Styling */
+nav {
+    background-color: #112240;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #64FFDA;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #E6F1FF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: #64FFDA;
+    color: #0A192F;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #112240, #233554);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Projects Section */
+.projects-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #112240;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.projects-section h2 {
+    border-bottom: 3px solid #64FFDA;
+    padding-bottom: 0.5rem;
+    color: #64FFDA;
+}
+
+.project-item {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 2px solid #64FFDA;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(100, 255, 218, 0.3);
+}
+
+.project-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #64FFDA;
+}
+
+.project-item h3 a {
+    text-decoration: none;
+    color: #E6F1FF;
+    transition: color 0.3s ease-in-out;
+}
+
+.project-item h3 a:hover {
+    color: #64FFDA;
+}
+
+.project-item p {
+    margin: 0.25rem 0;
+    color: #A8B2D1;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #112240;
+        padding: 1rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav>
+    <div class="logo">Siddhant Naik</div>
+    <span class="menu-toggle">&#9776;</span>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+</nav><!-- Header --><header>
+    <h1>Projects</h1>
+    <p>Explore my recent projects</p>
+</header><!-- Projects Section --><section class="projects-section">
+    <h2>Project Highlights</h2>
+    <div class="project-item">
+        <h3><a href="#" target="_blank">AWS APAC Solutions Architecture</a></h3>
+        <p>Designed a scalable AWS hosting architecture using Elastic Beanstalk. Evaluated cost implications and optimized infrastructure for performance. Communicated technical solutions effectively to a client-facing audience.</p>
+    </div>
+    <div class="project-item">
+        <h3><a href="#" target="_blank">Deloitte Australia Data Analytics Job Simulation</a></h3>
+        <p>Completed a Deloitte job simulation involving data analysis and forensic technology. Created a data dashboard using Tableau. Used Excel to classify data and draw business conclusions.</p>
+    </div>
+    <div class="project-item">
+        <h3><a href="#" target="_blank">Tata Cybersecurity Simulation</a></h3>
+        <p>Completed a job simulation focused on Identity and Access Management (IAM). Gained expertise in cybersecurity best practices and business alignment. Created documentation and presentations on security implementation strategies.</p>
+    </div>
+    <div class="project-item">
+        <h3><a href="#" target="_blank">Data Management System</a></h3>
+        <p>Developed efficient data management solutions during my role as a Data Entry Clerk. Implemented organized filing systems and streamlined data verification processes for improved accuracy and efficiency.</p>
+    </div>
+</section><script>
+    // Navbar Toggle for Mobile
+    document.querySelector(".menu-toggle").addEventListener("click", function() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    });
+</script></body>
+</html>

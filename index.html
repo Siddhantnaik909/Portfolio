@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio showcasing my work, blog, and projects.">
+    <meta property="og:title" content="My Website">
+    <meta property="og:description" content="Explore my work and experiences.">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:type" content="website">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(to right, #eef2f3, #8e9eab);
+            color: #333;
+            transition: background 0.3s ease-in-out;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background: #2c3e50;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .menu a:hover {
+            background: #34495e;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            background: white;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                background: #2c3e50;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 200px;
+                padding: 1rem;
+                border-radius: 5px;
+            }
+            .menu.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #2c3e50, #4b6584);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Portfolio Section */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .column {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .column:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .certificate-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .certificate-btn:hover {
+            background: #34495e;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">My Website</div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my work and experiences.</p>
+</header>
+
+<!-- Portfolio Section -->
+<section class="container">
+    <h2>My Portfolio</h2>
+
+    <div class="column">
+        <img src="project1.jpg" alt="AWS APAC Solutions Architecture" class="project-img" loading="lazy">
+        <h3>AWS APAC Solutions Architecture</h3>
+        <ul>
+            <li>Designed a scalable AWS hosting architecture using Elastic Beanstalk.</li>
+            <li>Evaluated cost implications and optimized infrastructure for performance.</li>
+            <li>Effectively communicated technical solutions to a client-facing audience.</li>
+        </ul>
+        <a href="certificate1.pdf" target="_blank" class="certificate-btn">Click to Open Certificate</a>
+    </div>
+
+    <div class="column">
+        <img src="project 2.png" alt="Deloitte Data Analytics Job Simulation" class="project-img" loading="lazy">
+        <h3>Deloitte Australia Data Analytics Job Simulation</h3>
+        <ul>
+            <li>Completed a Deloitte job simulation focusing on data analysis and forensic technology.</li>
+            <li>Created an interactive data dashboard using Tableau.</li>
+            <li>Utilized Excel to classify data and draw meaningful business conclusions.</li>
+        </ul>
+        <a href="certificate2.pdf" target="_blank" class="certificate-btn">Click to Open Certificate</a>
+    </div>
+
+    <div class="column">
+        <img src="project3.jpg" alt="Tata Cybersecurity Simulation" class="project-img" loading="lazy">
+        <h3>Tata Cybersecurity Simulation</h3>
+        <ul>
+            <li>Completed a job simulation focused on Identity and Access Management (IAM).</li>
+            <li>Gained expertise in cybersecurity best practices and business alignment.</li>
+            <li>Created documentation and presentations on security implementation strategies.</li>
+        </ul>
+        <a href="certificate3.pdf" target="_blank" class="certificate-btn">Click to Open Certificate</a>
+    </div>
+</section>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+        document.body.addEventListener('click', function (event) {
+            if (!menu.contains(event.target) && !event.target.closest('.hamburger')) {
+                menu.classList.remove('active');
+            }
+        }, { once: true });
+    }
+</script>
+
+</body>
+</html>

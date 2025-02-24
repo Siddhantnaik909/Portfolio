@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>  <html lang="en">  <head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Resume - Siddhant Naik</title>  
+    <meta name="description" content="Resume of Siddhant Satish Naik - IT Support, Cybersecurity, Cloud Computing, and Data Management.">  <style>  
+    /* General Styles */  
+    * {  
+        margin: 0;  
+        padding: 0;  
+        box-sizing: border-box;  
+        font-family: 'Poppins', sans-serif;  
+    }  
+    body {  
+        background: linear-gradient(to right, #eef2f3, #8e9eab);  
+        color: #333;  
+        transition: background 0.3s ease-in-out;  
+    }  /* Navbar */  
+nav {  
+    background: #2c3e50;  
+    padding: 1rem 2rem;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}  
+.menu {  
+    list-style: none;  
+    display: flex;  
+    gap: 1.5rem;  
+}  
+.menu a {  
+    color: white;  
+    text-decoration: none;  
+    padding: 10px 15px;  
+    border-radius: 5px;  
+    transition: 0.3s;  
+}  
+.menu a:hover {  
+    background: #34495e;  
+}  
+.hamburger {  
+    display: none;  
+    cursor: pointer;  
+}  
+.hamburger div {  
+    width: 30px;  
+    height: 3px;  
+    background: white;  
+    margin: 5px;  
+    transition: 0.3s;  
+}  
+
+@media (max-width: 768px) {  
+    .menu {  
+        display: none;  
+        flex-direction: column;  
+        background: #2c3e50;  
+        position: absolute;  
+        top: 60px;  
+        right: 0;  
+        width: 200px;  
+        padding: 1rem;  
+        border-radius: 5px;  
+    }  
+    .menu.active {  
+        display: flex;  
+    }  
+    .hamburger {  
+        display: block;  
+    }  
+}  
+
+/* Header */  
+header {  
+    background: linear-gradient(to right, #2c3e50, #4b6584);  
+    color: white;  
+    text-align: center;  
+    padding: 3rem 1rem;  
+    border-radius: 0 0 50px 50px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}  
+
+/* Container */  
+.container {  
+    max-width: 1000px;  
+    margin: 2rem auto;  
+    padding: 0 1rem;  
+}  
+
+/* Resume Sections */  
+.resume-section {  
+    background: white;  
+    padding: 2rem;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    margin-bottom: 2rem;  
+    animation: fadeIn 1s ease-in-out;  
+}  
+.resume-section h2 {  
+    border-bottom: 3px solid #4b6584;  
+    padding-bottom: 5px;  
+    margin-bottom: 15px;  
+    font-size: 1.5rem;  
+}  
+.resume-section p {  
+    line-height: 1.6;  
+    font-size: 1rem;  
+}  
+
+/* Projects */  
+.project-item {  
+    margin-bottom: 20px;  
+    padding: 15px;  
+    border-left: 5px solid #4b6584;  
+    background: #f8f9fa;  
+    border-radius: 5px;  
+    transition: transform 0.3s;  
+}  
+.project-item:hover {  
+    transform: translateX(5px);  
+}  
+.project-item h3 a {  
+    text-decoration: none;  
+    color: #2c3e50;  
+}  
+.project-item h3 a:hover {  
+    color: #4b6584;  
+}  
+
+/* Animations */  
+@keyframes fadeIn {  
+    from {  
+        opacity: 0;  
+        transform: translateY(20px);  
+    }  
+    to {  
+        opacity: 1;  
+        transform: translateY(0);  
+    }  
+}
+
+</style></head>  
+<body>  <nav>  
+    <div class="logo" style="color:white; font-size: 1.5rem; font-weight: bold;">Siddhant Naik</div>  
+    <ul class="menu">  
+        <li><a href="index.html">Home</a></li>  
+        <li><a href="about.html">About</a></li>  
+        <li><a href="projects.html">Projects</a></li>  
+        <li><a href="contact.html">Contact</a></li>  
+        <li><a href="resume.html">Resume</a></li>  
+    </ul>  
+    <div class="hamburger" onclick="toggleMenu()">  
+        <div></div>  
+        <div></div>  
+        <div></div>  
+    </div>  
+</nav>  <header>  
+    <h1>Siddhant Satish Naik</h1>  
+    <p>siddhantnaik909@gmail.com | 9833866486</p>  
+    <p><a href="https://www.linkedin.com/in/siddhant-naik-349170333" target="_blank" style="color: white; text-decoration: underline;">LinkedIn Profile</a></p>  
+</header>  <div class="container">  
+    <section class="resume-section">  
+        <h2>Professional Summary</h2>  
+        <p>Dedicated IT support and cybersecurity enthusiast with a strong foundation in data management, IAM, and cloud solutions.</p>  
+    </section>  <section class="resume-section">  
+    <h2>Education</h2>  
+    <p><strong>The Little Flower's College, Andheri, Mumbai</strong> - BCA in Computer Science (2023-2026)</p>  
+    <p><strong>Nutan Vidyalaya And Jr. College, Nallasopara East</strong> - HSC Arts (2022-2023)</p>  
+    <p><strong>Matoshri Rakhmabai Gaikwad Vidyalaya, Kalyan East</strong> - SSC Semi-English (2020-2021)</p>  
+</section>  
+
+<section class="resume-section">  
+    <h2>Key Skills</h2>  
+    <ul>  
+        <li>Data Management & Verification</li>  
+        <li>Identity and Access Management (IAM)</li>  
+        <li>Cybersecurity Fundamentals</li>  
+        <li>Cloud Computing & Solution Architecture</li>  
+    </ul>  
+</section>  
+
+<section class="resume-section">  
+    <h2>Projects</h2>  
+
+    <div class="project-item">  
+        <h3><a href="#">AWS Cloud Architecture</a></h3>  
+        <p>Designed and implemented a scalable cloud architecture using AWS.</p>  
+    </div>  
+
+    <div class="project-item">  
+        <h3><a href="#">Tata Cybersecurity Simulation</a></h3>  
+        <p>Focused on Identity and Access Management (IAM) and security best practices.</p>  
+    </div>  
+
+    <div class="project-item">  
+        <h3><a href="#">Deloitte Australia Data Analytics Job Simulation</a></h3>  
+        <p>Created data dashboards using Tableau and analyzed data using Excel.</p>  
+    </div>  
+
+    <div class="project-item">  
+        <h3><a href="#">Data Management System</a></h3>  
+        <p>Created a database-driven system for managing student records.</p>  
+    </div>  
+</section>
+
+</div>  <script>  
+    function toggleMenu() {  
+        document.querySelector('.menu').classList.toggle('active');  
+    }  
+</script></body>  
+</html>
